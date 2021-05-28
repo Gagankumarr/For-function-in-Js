@@ -1,4 +1,4 @@
-var array = [
+let array = [
     {
         name: 'Gagan'
     },
@@ -7,13 +7,16 @@ var array = [
     }
 ]
 
-//********   For Each function TO PUSH VALUE IN NEW ARRAY  ******** */
+//********   For  function TO PUSH VALUE IN NEW ARRAY  ******** */
 
-var newArray = [];
+let newArray = [];
 
-array.forEach(res => {
-    this.newArray.push(res.name)
-});
+for (let i = 0; i < array.length; i++) {
+    let newList = array[i].name;
+    console.log(newList);
+    newArray.push(newList);
+}
 
 console.log(' Old Array ', array);
-console.log(' New Array ', this.newArray);
+console.log(' New Array ', newArray);
+
