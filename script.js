@@ -7,13 +7,13 @@ var array = [
     }
 ]
 
-//********   MAP FUNCTION TO PUSH VALUE IN NEW ARRAY  ******** */
+//********   For Each function TO PUSH VALUE IN NEW ARRAY  ******** */
 
 var newArray = [];
 
-this.newArray = array.map((res) => {
-    return res.name;
-})
+array.forEach(res => {
+    this.newArray.push(res.name)
+});
 
 console.log(' Old Array ', array);
 console.log(' New Array ', this.newArray);
